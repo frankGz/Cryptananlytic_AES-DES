@@ -39,7 +39,7 @@ public class YorkModeDES {
 		
 	}
 
-
+	//undo negation
 	public static byte[] inverse(byte[] IV)
 	{
 		for(int i=0;i<IV.length;i++)
