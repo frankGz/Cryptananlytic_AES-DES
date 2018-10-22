@@ -62,14 +62,3 @@ public class YorkModeDES {
 		return result; 
 	}
 }
-/*
- *  16B English string is encrypted using DES with the following parameters:
-No Padding
-The York Mode of Operation (more on this mode below)
-The Key: 0x 6B79466F724D4F50
-The IV: 0x 6976466F724D4F50
-The York Mode of Operation is a custom mode that is very similar to CBC except for one difference: the plaintext of the current block is XORed with the negation of the ciphertext of the previous block. As to the very first block, its plaintext is XORed with the negation of IV. Here is a diagram that shows how this mode operates: 
-Note that since this mode is not standard, you will need to implement its logic yourself --the Java cryptography extension is not aware of the York mode. Given that the ciphertext is:
-       0x 437DBAB5607137A5CFC1031114634087
-determine the letters of the plaintext. Express the plaintext as English characters. 
- */
